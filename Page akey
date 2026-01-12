@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BoletPam - Jwèt Lotri sou Entènèt</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 40px;
+      background: #f8f8f8;
+    }
+    h1 {
+      color: #8b008b;
+    }
+    button {
+      margin: 10px;
+      padding: 15px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .play { background-color: #4CAF50; color: white; }
+    .results { background-color: #2196F3; color: white; }
+  </style>
+</head>
+<body>
+  <h1>🎉 Byenveni sou BoletPam 🎉</h1>
+  <p>Jwe lotri sou entènèt — chwazi nimewo w, achte tikè w, epi eseye chans ou!</p>
+  <button class="play" onclick="location.href='jwe.html'">🎟️ Jwe kounye a</button>
+  <button class="results" onclick="location.href='rezilta.html'">🔍 Tcheke rezilta</button>
+  <p style="margin-top: 50px;">© 2026 BoletPam. Tout dwa rezève.</p>
+</body>
+</html>
