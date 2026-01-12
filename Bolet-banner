@@ -1,0 +1,12 @@
+<section class="boletpam-banner">
+  <div class="banner-content">
+    <div class="left-side">
+      <h1 class="logo">BoletPam</h1>
+      <p class="slogan">JWE LOTRI AK MACHANN CHANS OU — ACHTE TIKÈ W, LEVE CHANS OU.</p>
+      <a href="#achte" class="btn-achte">Achte tikè</a>
+    </div>
+    <div class="right-side">
+      <img src="bann-boletpam.jpg" alt="Gayan ak tikè BoletPam" class="banner-image" />
+    </div>
+  </div>
+</section>
