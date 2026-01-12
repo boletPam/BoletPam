@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezilta BoletPam</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 40px;
+      background: #eef7ff;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      width: 200px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Rezilta Tiraj</h2>
+  <p>Dènye nimewo ki soti: <strong>12, 34, 56</strong></p>
+  <form onsubmit="return tchekeRezilta()">
+    <input type="text" placeholder="Antre nimewo tikè ou" required>
+    <button type="submit">Tcheke</button>
+  </form>
+  <p id="rezilta" style="margin-top:20px; color:blue;"></p>
+
+  <script>
+    function tchekeRezilta() {
+      document.getElementById("rezilta").innerText = "🎉 Ou genyen! Felisitasyon!";
+      return false;
+    }
+  </script>
+</body>
+</html>
