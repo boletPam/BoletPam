@@ -1,0 +1,53 @@
+<form id="boletpamForm">
+  <h2>Jwe Tikè BoletPam 🎰</h2>
+
+  <label for="name">Non ou:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Imèl ou (opsyonèl):</label>
+  <input type="email" id="email" name="email">
+
+  <label>Chwazi 5 nimewo (1 - 50):</label>
+  <div id="numbers">
+    <input type="number" name="num1" min="1" max="50" required>
+    <input type="number" name="num2" min="1" max="50" required>
+    <input type="number" name="num3" min="1" max="50" required>
+    <input type="number" name="num4" min="1" max="50" required>
+    <input type="number" name="num5" min="1" max="50" required>
+  </div>
+
+  <label for="country">Ki kote w ye?</label>
+  <select id="country" name="country" onchange="togglePayment()" required>
+    <option value="">Chwazi...</option>
+    <option value="haiti">Ayiti</option>
+    <option value="usa">USA / Lòt</option>
+  </select>
+
+  <div id="moncash" style="display:none; margin-top:10px;">
+    <p>Peye ak MonCash: <strong>+509 XXX XX XX</strong></p>
+    <label for="moncashCode">Antre kòd konfimasyon MonCash ou:</label>
+    <input type="text" id="moncashCode" name="moncashCode">
+  </div>
+
+  <div id="paypal" style="display:none; margin-top:10px;">
+    <p>Peye ak PayPal:</p>
+    <button type="button" onclick="alert('Redireksyon sou PayPal...')">Peye ak PayPal</button>
+  </div>
+
+  <button type="submit">Soumèt Tikè</button>
+</form>
+
+<script>
+  function togglePayment() {
+    const country = document.getElementById("country").value;
+    document.getElementById("moncash").style.display = country === "haiti" ? "block" : "none";
+    document.getElementById("paypal").style.display = country === "usa" ? "block" : "none";
+  }
+
+  document.getElementById("boletpamForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const ticketCode = "BP-" + Math.floor(100000 + Math.random() * 900000);
+    alert("Tikè ou anrejistre! Kòd ou: " + ticketCode);
+    // Ou ka ajoute kòd pou sove tikè a oswa voye pa imel
+  });
+</script>
